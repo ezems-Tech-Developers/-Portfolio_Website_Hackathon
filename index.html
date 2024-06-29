@@ -1,19 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
- <meta name="viewport"
-			content="width=device-width, initial-scale = 1, maximum-scale=3.0, minimum-scale=1">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="https://kit.fontawesome.com/8045f4b3b3.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=3.0, minimum-scale=1">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://kit.fontawesome.com/8045f4b3b3.js" crossorigin="anonymous"></script>
   <title>Eng.Ziroh | Portfolio</title>
 
- 
+
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-  
-  
+
+
   <link rel="stylesheet" type="text/css" href="assets/css/profile.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/ezems.css">
@@ -23,130 +22,155 @@
   <link rel="stylesheet" href="assets/css/hireme.css">
   <link rel="stylesheet" href="assets/css/logo.css">
   <script src="./assets/js/p.js"></script>
- 
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<style>
-.message {
-    color: green;
-    text-align: center;
-    margin: 20px;
-    font-size: 18px;
-}
-   .rotate-icon {
-            font-size: 20px; /* Adjust the size of the icon */
-            animation: rotate 2s linear infinite; /* 2 seconds for one full rotation */
-            display: inline-block;
-            color: #25D366; /* Set the color of the icon to WhatsApp green */
-            
-        }
+  <style>
+    .message {
+      color: green;
+      text-align: center;
+      margin: 20px;
+      font-size: 18px;
+    }
 
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .whatsapp-container {
-            position: relative;
-            width: 40px; /* Adjust as needed */
-            height: 40px; /* Adjust as needed */
-            color: #25D366;
-        }
-
-        .whatsapp-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #25D366; /* WhatsApp green background */
-            border-radius: 50%; /* Make it a circle */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .whatsapp-icon {
-            color: white; /* WhatsApp icon color */
-            background-color: #25D366;
-        }
-.popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        
-        /* Popup content */
-        .popup-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
-#subscribeForm button:hover {
-            background-color: darkgreen;
-            
-        }
-        .avatar-circle {
+    .rotate-icon {
+      font-size: 20px;
+      /* Adjust the size of the icon */
+      animation: rotate 2s linear infinite;
+      /* 2 seconds for one full rotation */
       display: inline-block;
-      width: 100px; /* Set the width of the container */
-      height: 100px; /* Set the height of the container */
-      border-radius: 50%; /* Make the container a circle */
-      overflow: hidden; /* Hide overflow to ensure circular shape */
-      border: 2px solid #ccc; /* Optional: Add a border */
+      color: #25D366;
+      /* Set the color of the icon to WhatsApp green */
+
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .whatsapp-container {
+      position: relative;
+      width: 40px;
+      /* Adjust as needed */
+      height: 40px;
+      /* Adjust as needed */
+      color: #25D366;
+    }
+
+    .whatsapp-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #25D366;
+      /* WhatsApp green background */
+      border-radius: 50%;
+      /* Make it a circle */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-icon {
+      color: white;
+      /* WhatsApp icon color */
+      background-color: #25D366;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Popup content */
+    .popup-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #subscribeForm button:hover {
+      background-color: darkgreen;
+
+    }
+
+    .avatar-circle {
+      display: inline-block;
+      width: 100px;
+      /* Set the width of the container */
+      height: 100px;
+      /* Set the height of the container */
+      border-radius: 50%;
+      /* Make the container a circle */
+      overflow: hidden;
+      /* Hide overflow to ensure circular shape */
+      border: 2px solid #ccc;
+      /* Optional: Add a border */
     }
 
     .avatar-circle img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Ensure the image covers the container */
-      border-radius: 50%; /* Make the image a circle */
+      object-fit: cover;
+      /* Ensure the image covers the container */
+      border-radius: 50%;
+      /* Make the image a circle */
       float: center;
     }
+
     .footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  width: 40%;
-  background-color: 0;
-  text-emphasis-color: white;
-}
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 40%;
+      background-color: 0;
+      text-emphasis-color: white;
+    }
+
     .Copyright {
-    background-color: #f8f8f8;
-    /*color: black;*/
-    padding: 20px;
-    text-align: center;
-    font-size: 12px;
-    font-family: "Montserrat", sans-serif;
-}
+      background-color: #f8f8f8;
+      /*color: black;*/
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      font-family: "Montserrat", sans-serif;
+    }
 
     .hidden-content {
-            display: none;
-        }
-        .read-more {
-            cursor: pointer;
-            color: var(--orange-yellow-crayola);
-        }
-        .show-more .hidden-content {
-            display: block;
-        }
-        .show-more .read-more {
-            display: none;
-        }
-</style>
+      display: none;
+    }
+
+    .read-more {
+      cursor: pointer;
+      color: var(--orange-yellow-crayola);
+    }
+
+    .show-more .hidden-content {
+      display: block;
+    }
+
+    .show-more .read-more {
+      display: none;
+    }
+  </style>
 
 </head>
 
@@ -161,88 +185,89 @@
     <!--
       - #SIDEBAR
     -->
-   
-   <aside class="sidebar" data-sidebar>
- 
-  <div class="sidebar-info">
-    <figure class="avatar-circle">
-      <img src="./assets/images/my-avast.png" alt="Eng.Ziroh">
-    </figure>
-    <div class="info-content">
-      <h1 class="name" title="Eng. Zirohk">Eng. Ziroh K. Mae</h1>
-      <a href="contact-us/index.php" class="btn btn-primary blink-blink">HIRE ME</a>
-      <div class="whatsapp-container rotate-icon">
-        <div class="whatsapp-background">
-          <a href="https://wa.me/0101086123" target="_blank">
-            <i class="fab fa-whatsapp whatsapp-icon"></i>
-          </a>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-circle">
+          <img src="./assets/images/my-avast.png" alt="Eng.Ziroh">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Eng. Zirohk">Eng. Ziroh K. Mae</h1>
+          <a href="contact-us/index.php" class="btn btn-primary blink-blink">HIRE ME</a>
+          <div class="whatsapp-container rotate-icon">
+            <div class="whatsapp-background">
+              <a href="https://wa.me/0101086123" target="_blank">
+                <i class="fab fa-whatsapp whatsapp-icon"></i>
+              </a>
+            </div>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <p>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nillymae07@gmail.com&su=subject_here&body=body_here"
+                    class="contact-link">nillymae07@gmail.com</a>
+                </p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+254799086123" class="contact-link">+254799086123</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1982-06-23">Sep 25, 1986</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Mombasa, Shanzu, Kenya</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://facebook.com/zirohm" target="_blank" class="fab fa-facebook"></a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/ziroh-katana-24b23ba9/" target="_blank" class="fab fa-linkedin"></a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.youtube.com/@zirohmae" target="_blank" class="fab fa-youtube"></a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/Tella86" target="_blank" class="fab fa-github"></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <button class="info_more-btn" data-sidebar-btn>
-        <span>Show Contacts</span>
-        <ion-icon name="chevron-down"></ion-icon>
-      </button>
-    </div>
-    <div class="sidebar-info_more">
-      <div class="separator"></div>
-      <ul class="contacts-list">
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="mail-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Email</p>
-            <p>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nillymae07@gmail.com&su=subject_here&body=body_here" class="contact-link">nillymae07@gmail.com</a>
-            </p>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="phone-portrait-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Phone</p>
-            <a href="tel:+254799086123" class="contact-link">+254799086123</a>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="calendar-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Birthday</p>
-            <time datetime="1982-06-23">Sep 25, 1986</time>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="location-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Location</p>
-            <address>Mombasa, Shanzu, Kenya</address>
-          </div>
-        </li>
-      </ul>
-      <div class="separator"></div>
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="https://facebook.com/zirohm" target="_blank" class="fab fa-facebook"></a>
-        </li>
-        <li class="social-item">
-          <a href="https://www.linkedin.com/in/ziroh-katana-24b23ba9/" target="_blank" class="fab fa-linkedin"></a>
-        </li>
-        <li class="social-item">
-          <a href="https://www.youtube.com/@zirohmae" target="_blank" class="fab fa-youtube"></a>
-        </li>
-        <li class="social-item">
-          <a href="https://github.com/Tella86" target="_blank" class="fab fa-github"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</aside>
+    </aside>
 
 
 
@@ -250,102 +275,123 @@
     <!--
       - #main-content
     -->
-   
+
     <div class="main-content">
 
       <!--
         - #NAVBAR
       -->
-     
+
       <nav class="navbar">
-      
+
         <ul class="navbar-list">
-    
+
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
-    
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
-    
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
-    
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Services</button>
           </li>
-    
+
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-    
+
         </ul>
-    
+
       </nav>
       <nav class="navbar">
-          
+
         <ul class="navbar-list">
-    
+
           <li class="navbar-logout">
-           
-           <a href="https://ezems.co.ke/user/auth/login" target="_blank" style="color: white; ">login</a> 
+
+            <a href="https://ezems.co.ke/user/auth/login" target="_blank" style="color: white; ">login</a>
           </li>
           <li class="navbar-Register">
-           
-            <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" style="color: white; ">Register</a> 
-           </li>
+
+            <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" style="color: white; ">Register</a>
+          </li>
         </ul>
-    
+
       </nav>
 
-     
-     
+
+
 
       <!--
         - #ABOUT
       -->
-<?php include 'sub_form.php';?>
+      <?php include 'sub_form.php';?>
       <article class="about  active" data-page="about">
 
         <header>
 
-        <div class="logo-container" >
-    <a href="index">
-        <img src="assets/images/logo.png" alt="Ziroh" width="210" height="">
-    </a>
-</div>
+          <div class="logo-container">
+            <a href="index">
+              <img src="assets/images/logo.png" alt="Ziroh" width="210" height="">
+            </a>
+          </div>
 
           <h2 class="h2 article-title">About me</h2>
         </header>
-   
-     <section class="about-text">
-    <p>Ezems Tech, Specialize in delivering cutting-edge solutions across various domains of technology. Our expertise encompasses a wide array of services designed to empower businesses and institutions with robust digital solutions.</p>
-    <p>Here's an overview of our key offerings:</p>
-    <div class="hidden-content">
-        <ul>
-            <li><b style="color: var(--orange-yellow-crayola);">Web Design:</b> <br>We craft intuitive, responsive websites tailored to meet your business needs, ensuring seamless user experiences and enhanced engagement.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">E-commerce Solutions:</b> <br>Leveraging industry-leading platforms, we develop secure and scalable e-commerce solutions that drive online sales and streamline operations.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">M-Pesa Integration:</b> <br>Harnessing the power of mobile money, we integrate M-Pesa payment solutions into your systems, facilitating convenient transactions and enhancing customer satisfaction.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">ATM Solutions:</b><br> Our expertise extends to developing secure and efficient ATM solutions, ensuring reliable banking services and enhanced user convenience.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">E-Portfolio Services:</b><br> We create dynamic e-portfolios that showcase your skills and achievements, helping you stand out in today\'s competitive landscape.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">E-pay Services:</b> <br>Facilitating seamless electronic payment processing, we offer tailored e-pay services that optimize financial transactions and improve operational efficiency.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">College Management Systems:</b><br> Our comprehensive college management systems automate administrative tasks, streamline academic operations, and enhance communication between stakeholders.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">E-voting Systems:</b> <br>Ensuring transparency and efficiency in electoral processes, our e-voting systems offer secure and reliable voting solutions for organizations and institutions.</li>
-            <li><b style="color: var(--orange-yellow-crayola);">Newsletter Services:</b><br> Engage your audience effectively with our newsletter services, delivering targeted content and promotions to build customer loyalty and drive conversions.</li>
-        </ul>
-        <p><b>At Ezems Tech, we are committed to delivering innovative solutions that drive growth, efficiency, and success. Partner with us to transform your digital aspirations into reality.</b></p>
-    </div>
-</section>
-<p class="read-more" onclick="toggleText()">Read More</p>
 
-<script>
-    function toggleText() {
-        var aboutText = document.querySelector('.about-text');
-        aboutText.classList.toggle('show-more');
-    }
-</script>
+        <section class="about-text">
+          <p>Ezems Tech, Specialize in delivering cutting-edge solutions across various domains of technology. Our
+            expertise encompasses a wide array of services designed to empower businesses and institutions with robust
+            digital solutions.</p>
+          <p>Here's an overview of our key offerings:</p>
+          <div class="hidden-content">
+            <ul>
+              <li><b style="color: var(--orange-yellow-crayola);">Web Design:</b> <br>We craft intuitive, responsive
+                websites tailored to meet your business needs, ensuring seamless user experiences and enhanced
+                engagement.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">E-commerce Solutions:</b> <br>Leveraging
+                industry-leading platforms, we develop secure and scalable e-commerce solutions that drive online sales
+                and streamline operations.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">M-Pesa Integration:</b> <br>Harnessing the power of
+                mobile money, we integrate M-Pesa payment solutions into your systems, facilitating convenient
+                transactions and enhancing customer satisfaction.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">ATM Solutions:</b><br> Our expertise extends to
+                developing secure and efficient ATM solutions, ensuring reliable banking services and enhanced user
+                convenience.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">E-Portfolio Services:</b><br> We create dynamic
+                e-portfolios that showcase your skills and achievements, helping you stand out in today\'s competitive
+                landscape.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">E-pay Services:</b> <br>Facilitating seamless
+                electronic payment processing, we offer tailored e-pay services that optimize financial transactions and
+                improve operational efficiency.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">College Management Systems:</b><br> Our comprehensive
+                college management systems automate administrative tasks, streamline academic operations, and enhance
+                communication between stakeholders.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">E-voting Systems:</b> <br>Ensuring transparency and
+                efficiency in electoral processes, our e-voting systems offer secure and reliable voting solutions for
+                organizations and institutions.</li>
+              <li><b style="color: var(--orange-yellow-crayola);">Newsletter Services:</b><br> Engage your audience
+                effectively with our newsletter services, delivering targeted content and promotions to build customer
+                loyalty and drive conversions.</li>
+            </ul>
+            <p><b>At Ezems Tech, we are committed to delivering innovative solutions that drive growth, efficiency, and
+                success. Partner with us to transform your digital aspirations into reality.</b></p>
+          </div>
+        </section>
+        <p class="read-more" onclick="toggleText()">Read More</p>
+
+        <script>
+          function toggleText() {
+            var aboutText = document.querySelector('.about-text');
+            aboutText.classList.toggle('show-more');
+          }
+        </script>
 
 
         <!--
@@ -511,8 +557,7 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="assets/images/logo-1-color.jpg" alt="Korobo Investors" width="60"
-                    data-testimonials-avatar>
+                  <img src="assets/images/logo-1-color.jpg" alt="Korobo Investors" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Korobo Investors</h4>
@@ -632,10 +677,6 @@
         </section>
 
       </article>
-
-
-
-
 
       <!--
         - #RESUME
@@ -923,26 +964,22 @@
 
             <li class="skills-item">
 
-                <div class="title-wrapper">
-                  <h5 class="h5">Github </h5>
-                  <data value="50">80%</data>
-                </div>
-  
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 84%;"></div>
-                </div>
-  
-              </li>
+              <div class="title-wrapper">
+                <h5 class="h5">Github </h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 84%;"></div>
+              </div>
+
+            </li>
 
           </ul>
 
         </section>
 
       </article>
-
-
-
-
 
       <!--
         - #PRPOJECT
@@ -1200,51 +1237,51 @@
         <section class="packages">
           <div class="packages">
             <div class="package-card">
-                <h2>Basic</h2>
-                <p class="price" style="background-color: gold; border-radius: 10px;">Ksh.18,000</p>
-                <h3>Exclusive Domain & Hosting</h3>
-                <ul>
-                    <li>Basic website</li>
-                    <li>Optimized Blog Page</li>
-                    <li>Standard SEO optimization</li>
-                    <li>Social Media Integration</li>
-                    <li>Basic Analytics Tools</li>
-                    <li>20 email Setup</li>
-                </ul>
-                <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" class="choose-plan">Choose Plan</a>
+              <h2>Basic</h2>
+              <p class="price" style="background-color: gold; border-radius: 10px;">Ksh.18,000</p>
+              <h3>Exclusive Domain & Hosting</h3>
+              <ul>
+                <li>Basic website</li>
+                <li>Optimized Blog Page</li>
+                <li>Standard SEO optimization</li>
+                <li>Social Media Integration</li>
+                <li>Basic Analytics Tools</li>
+                <li>20 email Setup</li>
+              </ul>
+              <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" class="choose-plan">Choose Plan</a>
             </div>
-    
+
             <div class="package-card">
-                <h2>Standard</h2>
-                <p class="price" style="background-color: gold; border-radius: 10px;">Ksh.28,000</p>
-                <h3>Exclusive Domain & Hosting</h3>
-                <ul>
-                    <li>Enhanced Web Design</li>
-                    <li>Advanced SEO Ranking</li>
-                    <li>Social Media Integration</li>
-                    <li>Basic Marketing Tools</li>
-                    <li>Enhanced Analytics</li>
-                    <li>50+ Email Setup</li>
-                </ul>
-                <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" class="choose-plan">Choose Plan</a>
+              <h2>Standard</h2>
+              <p class="price" style="background-color: gold; border-radius: 10px;">Ksh.28,000</p>
+              <h3>Exclusive Domain & Hosting</h3>
+              <ul>
+                <li>Enhanced Web Design</li>
+                <li>Advanced SEO Ranking</li>
+                <li>Social Media Integration</li>
+                <li>Basic Marketing Tools</li>
+                <li>Enhanced Analytics</li>
+                <li>50+ Email Setup</li>
+              </ul>
+              <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" class="choose-plan">Choose Plan</a>
             </div>
-    
+
             <div class="package-card">
-                <h2>Premium</h2>
-                <p class="price" style="background-color: gold; border-radius: 10px;">Ksh.48,000</p>
-                <h3>Exclusive Domain & Hosting</h3>
-                <ul>
-                    <li>Customized features & plugins</li>
-                    <li>Full SEO suite</li>
-                    <li>E-commerce integration</li>
-                    <li>Advanced marketing tools</li>
-                    <li>Elite Analysis and live reporting</li>
-                    <li>Advanced email solution</li>
-                    <li>Unlimited email Setup</li>
-                </ul>
-                <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" class="choose-plan">Choose Plan</a>
+              <h2>Premium</h2>
+              <p class="price" style="background-color: gold; border-radius: 10px;">Ksh.48,000</p>
+              <h3>Exclusive Domain & Hosting</h3>
+              <ul>
+                <li>Customized features & plugins</li>
+                <li>Full SEO suite</li>
+                <li>E-commerce integration</li>
+                <li>Advanced marketing tools</li>
+                <li>Elite Analysis and live reporting</li>
+                <li>Advanced email solution</li>
+                <li>Unlimited email Setup</li>
+              </ul>
+              <a href="https://ezems.co.ke/user/auth/signup.php" target="_blank" class="choose-plan">Choose Plan</a>
             </div>
-        </div>
+          </div>
         </section>
       </article>
 
@@ -1303,18 +1340,18 @@
 
 
 
-<button id="goToTopBtn"><i class="fas fa-arrow-up"></i></button>
+  <button id="goToTopBtn"><i class="fas fa-arrow-up"></i></button>
 
-<script>
+  <script>
     function goToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // This smoothens the scrolling effect
-        });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // This smoothens the scrolling effect
+      });
     }
 
     document.getElementById("goToTopBtn").addEventListener("click", goToTop);
-</script>
+  </script>
 
   <!--
     - custom js link
@@ -1326,27 +1363,25 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- 
-     <footer class="Copyright">
-        <b>Designed by:</b><a href="https://ezems.co.ke" target="_blank">Ezems Tech Developers</a>, 1333 Kilifi, County,
-        Kenya
-        <br>
-        <p>Copyright &copy; 2024 Ezems Tech Developera | All Rights Reserved</p>
-        <p>
-            <b>Follow us on</b>
-            <a href='https://www.facebook.com/ezemstech' target='_blank'>Facebook</a>,
-            <a href='https://www.twitter.com/ezems' target='_blank'>Twitter</a>,
-            <a href='https://www.instagram.com/ezems' target='_blank'>Instagram</a>,
-            <a href='https://www.youtube.com/@zirohmae' target='_blank'>YouTube</a>,
-            <a href='https://www.linkedin.com/in/ziroh-mae-ba13302b5' target='_blank'>LinkedIn</a>, and
-            <a href='https://github.com/Tella86/Tella86' target='_blank'>GitHub</a>
-        </p>
-    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+  <footer class="Copyright">
+    <b>Designed by:</b><a href="https://ezems.co.ke" target="_blank">Ezems Tech Developers</a>, 1333 Kilifi, County,
+    Kenya
+    <br>
+    <p>Copyright &copy; 2024 Ezems Tech Developera | All Rights Reserved</p>
+    <p>
+      <b>Follow us on</b>
+      <a href='https://www.facebook.com/ezemstech' target='_blank'>Facebook</a>,
+      <a href='https://www.twitter.com/ezems' target='_blank'>Twitter</a>,
+      <a href='https://www.instagram.com/ezems' target='_blank'>Instagram</a>,
+      <a href='https://www.youtube.com/@zirohmae' target='_blank'>YouTube</a>,
+      <a href='https://www.linkedin.com/in/ziroh-mae-ba13302b5' target='_blank'>LinkedIn</a>, and
+      <a href='https://github.com/Tella86/Tella86' target='_blank'>GitHub</a>
+    </p>
+  </footer>
 </body>
 
 </html>
