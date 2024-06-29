@@ -1,7 +1,7 @@
 # -Portfolio_Website_Hackathon
 ### README for Library Management System
 
-#### Author Information:
+#### Developer Information:
 **Name:** Eng. Ziroh Katana Mae  
 **Tel:** +254 101 086123  
 **Email:** nillymae07@gmail.com
@@ -20,7 +20,7 @@
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/ezems-Tech-Developers/portfolio_website_hackathon.git
+   git clone https://github.com/ezems-Tech-Developers/-Portfolio_Website_Hackathon.git
    ```
 2. **Navigate to the Project Directory**:
    ```sh
