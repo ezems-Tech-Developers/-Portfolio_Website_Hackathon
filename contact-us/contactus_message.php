@@ -12,21 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Sanitize input
     $name = htmlspecialchars($name);
     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars($message);
 
-    // Email details
-    $to = 'info@ezems.co.ke';  // Send the message to this email address
+    $to = 'info@ezems.co.ke'; 
     $subject = 'New Contact Us Message';
     $body = "Name: $name<br>Email: $email<br><br>Message:<br>$message";
 
-    // Initialize PHPMailer
     $mail = new PHPMailer(true);
 
     try {
-        // Server settings
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
@@ -35,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
-        // Send email to info@ezems.co.ke
         $mail->setFrom('info@ezems.co.ke', 'EZEMS TECH DEVELOPER');
         $mail->addAddress($to);
         $mail->isHTML(true);
@@ -43,11 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->Body = $body;
         $mail->send();
 
-        // Clear all recipients and attachments for the next email
         $mail->clearAddresses();
         $mail->clearAttachments();
 
-        // Send auto-reply to the user
         $mail->addAddress($email);
         $mail->Subject = 'Thank You for Reaching Out!';
         $mail->Body = "
@@ -68,15 +61,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 
-    include '../config.php';  // Include the database connection file
+    include '../config.php';  
 
-    // Insert message into the database
     $stmt = $conn->prepare("INSERT INTO messages (name, email, message) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $name, $email, $message);
     $stmt->execute();
     $stmt->close();
 
-    // Insert notification into the database
     $notification = "New message from $name";
     $stmt = $conn->prepare("INSERT INTO notifications (notification) VALUES (?)");
     $stmt->bind_param("s", $notification);
@@ -85,8 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $conn->close();
 
-    // Redirect to index.php after successful email sending and database insertion
     header('Location: index.html');
     exit;
 }
-?>
